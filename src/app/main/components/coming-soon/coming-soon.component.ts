@@ -1,4 +1,6 @@
 import { Component, OnInit } from '@angular/core';
+import { Movie } from '../../domain/movie';
+import { MainService } from '../../services/main.service';
 
 @Component({
   selector: 'app-coming-soon',
@@ -7,9 +9,11 @@ import { Component, OnInit } from '@angular/core';
 })
 export class ComingSoonComponent implements OnInit {
 
-  constructor() { }
+  movies: Array<Movie> = [];
 
-  ngOnInit() {
+  constructor(private mainService: MainService) { }
+
+  async ngOnInit() {
+    this.movies = await this.mainService.getComingSoon();
   }
-
 }

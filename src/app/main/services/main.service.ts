@@ -53,11 +53,20 @@ export class MainService {
   }
 
     /**
-   * Get a list of Most Popular Tvs
+   * Get a list of Movies In Theater
    * @returns 
    */
   async getInTheaters() {
     const movies = <any> await this.httpClient.get(environment.moviesUrl.concat(`/InTheaters/${environment.apiKey}`), this.httpOptions).toPromise();    
+    return <Array<Movie>> movies.items;
+  }
+
+      /**
+   * Get a list of Movies Coming Soon
+   * @returns 
+   */
+  async getComingSoon() {
+    const movies = <any> await this.httpClient.get(environment.moviesUrl.concat(`/ComingSoon/${environment.apiKey}`), this.httpOptions).toPromise();    
     return <Array<Movie>> movies.items;
   }
 
