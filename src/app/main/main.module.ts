@@ -22,10 +22,9 @@ const routes: Route[] = [
         component: Top250TvsComponent  
       },
       {
-        path: '',
-        redirectTo: 'top250',
-        pathMatch: 'full'
-      }
+        path: 'top250Tvs',
+        component: Top250TvsComponent  
+      },
     ]
   },
   {
