@@ -1,3 +1,9 @@
-<p>
-  in-theaters works!
-</p>
+<!-- Moost Popular Movie List -->
+<div class="column" *ngFor="let movie of movies">
+
+  <!-- Movie Image -->
+  <img class="Movie-Image" src="{{movie.image}}" alt="Top Movie Images">
+  <!-- Movie Title -->
+  <h3 class="Movie-Name">{{movie.fullTitle}}</h3>
+
+</div>
