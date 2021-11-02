@@ -6,6 +6,9 @@ import { Top250MoviesComponent } from './components/top250-movies/top250-movies.
 import { DashboardComponent } from './components/dashboard/dashboard.component';
 import { Route, RouterModule } from '@angular/router';
 import { Top250TvsComponent } from './components/top250-tvs/top250-tvs.component';
+import { MostPopularMoviesComponent } from './components/most-popular-movies/most-popular-movies.component';
+import { MostPopularTvsComponent } from './components/most-popular-tvs/most-popular-tvs.component';
+import { InTheatersComponent } from './components/in-theaters/in-theaters.component';
 
 
 const routes: Route[] = [
@@ -13,18 +16,37 @@ const routes: Route[] = [
     path: 'dashboard',
     component: DashboardComponent,
     children : [
+
+      // Top 250 Movies Path
       {
         path: 'top250',
         component: Top250MoviesComponent
       },
+
+      // Top 250 Tvs Path
       {
         path: 'top250Tvs',
         component: Top250TvsComponent  
       },
+
+      // Most Popular Movies Path
       {
-        path: 'top250Tvs',
-        component: Top250TvsComponent  
+        path: 'MostPopMovies',
+        component: MostPopularMoviesComponent  
       },
+
+      // Most Popular Tvs Path
+      {
+        path: 'MostPopTvs',
+        component: MostPopularMoviesComponent  
+      },
+
+      // In Theaters Path
+      {
+        path: 'InTheaters',
+        component: InTheatersComponent
+      },
+      
     ]
   },
   {
@@ -41,6 +63,6 @@ const routes: Route[] = [
     HttpClientModule
   ],
   providers: [MainService],
-  declarations: [Top250MoviesComponent, DashboardComponent, Top250TvsComponent]
+  declarations: [Top250MoviesComponent, DashboardComponent, Top250TvsComponent, MostPopularMoviesComponent, MostPopularTvsComponent, InTheatersComponent]
 })
 export class MainModule { }

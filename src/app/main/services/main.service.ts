@@ -33,4 +33,32 @@ export class MainService {
     const movies = <any> await this.httpClient.get(environment.moviesUrl.concat(`/Top250TVs/${environment.apiKey}`), this.httpOptions).toPromise();    
     return <Array<Movie>> movies.items;
   }
+
+    /**
+   * Get a list of Most Popular Movies
+   * @returns 
+   */
+  async getMostPopularMovies() {
+    const movies = <any> await this.httpClient.get(environment.moviesUrl.concat(`/MostPopularMovies/${environment.apiKey}`), this.httpOptions).toPromise();    
+    return <Array<Movie>> movies.items;
+  }
+
+  /**
+   * Get a list of Most Popular Tvs
+   * @returns 
+   */
+  async getMostPopularTvs() {
+    const movies = <any> await this.httpClient.get(environment.moviesUrl.concat(`/MostPopularTVs/${environment.apiKey}`), this.httpOptions).toPromise();    
+    return <Array<Movie>> movies.items;
+  }
+
+    /**
+   * Get a list of Most Popular Tvs
+   * @returns 
+   */
+  async getInTheaters() {
+    const movies = <any> await this.httpClient.get(environment.moviesUrl.concat(`/InTheaters/${environment.apiKey}`), this.httpOptions).toPromise();    
+    return <Array<Movie>> movies.items;
+  }
+
 }

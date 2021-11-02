@@ -15,7 +15,7 @@ const routes:Array<Route> = [
 
 @NgModule({
   declarations: [
-    AppComponent
+    AppComponent,
   ],
   imports: [
     RouterModule.forRoot(routes),
