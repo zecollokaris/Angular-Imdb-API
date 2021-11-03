@@ -10,6 +10,7 @@ import { MostPopularMoviesComponent } from './components/most-popular-movies/mos
 import { MostPopularTvsComponent } from './components/most-popular-tvs/most-popular-tvs.component';
 import { InTheatersComponent } from './components/in-theaters/in-theaters.component';
 import { ComingSoonComponent } from './components/coming-soon/coming-soon.component';
+import { ViewdetailsComponent } from './components/viewdetails/viewdetails.component';
 
 
 const routes: Route[] = [
@@ -51,6 +52,12 @@ const routes: Route[] = [
     path: 'ComingSoon',
     component: ComingSoonComponent
   },
+
+    // View Detials Path
+    {
+      path: 'ViewDetials',
+      component: ViewdetailsComponent
+    },
   {
     path: '',
     redirectTo: 'dashboard',
@@ -65,6 +72,6 @@ const routes: Route[] = [
     HttpClientModule
   ],
   providers: [MainService],
-  declarations: [Top250MoviesComponent, DashboardComponent, Top250TvsComponent, MostPopularMoviesComponent, MostPopularTvsComponent, InTheatersComponent, ComingSoonComponent, ]
+  declarations: [Top250MoviesComponent, DashboardComponent, Top250TvsComponent, MostPopularMoviesComponent, MostPopularTvsComponent, InTheatersComponent, ComingSoonComponent, ViewdetailsComponent, ]
 })
 export class MainModule { }
