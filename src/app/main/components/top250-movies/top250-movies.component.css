@@ -1,11 +1,19 @@
+/* Top Movies Title */
+.Top-Movies-Title{
+  margin-top: 50px;
+}
+
 .column{
-    width: 50%;
-    
-    float: left;
+  width: 50%;
+  float: left;
+  background-color: #F8F8F8;
+  height: 100%;
+
 }
 
 .Movie-Image {
-  width: 87%;
+  width: 158px;
+  height: 237px;
   border-radius: 7px;
   display: block;
   margin-left: auto;
@@ -14,11 +22,11 @@
 }
 
 .Movie-Name {
-    width: 87%;
-    border-radius: 7px;
-    text-align: center;
-    display: block;
-    margin-left: auto;
-    margin-right: auto;
-    margin-bottom: 30px;
-  }
+  width: 158px;
+  border-radius: 7px;
+  text-align: center;
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+  margin-bottom: 30px;
+}

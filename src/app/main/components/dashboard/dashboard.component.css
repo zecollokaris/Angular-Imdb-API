@@ -62,7 +62,7 @@
 /* Movie Posters */
 .Movie-Background-Poster{
   height: 170px;
-  min-width: 350px;
+  min-width: 320px;
   border-radius: 7px;
   margin-right: 10px;
   margin-left: 10px;
@@ -97,14 +97,14 @@
 
 /* Movie Name Title */
 .Category-Movie-Name{
-    margin-top: -11px;
-    color: white;
-    margin-left: 15px;
-    font-family: 'Zen Kaku Gothic New', sans-serif;
-    font-weight: 600;
-    text-transform: uppercase;
-    text-align: left;
-    font-size: 13px;
-    max-width: 155px;
-    margin-top: -55px;
+  margin-top: -11px;
+  color: white;
+  margin-left: 15px;
+  font-family: 'Zen Kaku Gothic New', sans-serif;
+  font-weight: 600;
+  text-transform: uppercase;
+  text-align: left;
+  font-size: 13px;
+  max-width: 155px;
+  margin-top: -55px;
 }
