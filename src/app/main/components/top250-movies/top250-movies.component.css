@@ -9,6 +9,10 @@
   border-bottom: 1px solid hsla(0,0%,64.7%,.3);
 }
 
+.Top-ToolBar a{
+  text-decoration: none;
+}
+
 /* Movies Category Title */
 .Top-Movies-Title{
   font-size: 25px;
@@ -64,6 +68,9 @@
   font-size: 22px;
   width: 80px;
   border-radius: 7px;
+  cursor: pointer;
+  text-decoration: none;
+  color: black;
 }
 
 /* Back Icon */
