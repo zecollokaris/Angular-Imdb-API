@@ -4,17 +4,28 @@
 
 /* Title Movies Text */
 .Movie-Title{
-    font-size: 25px;
-    font-family: 'Zen Kaku Gothic New', sans-serif;
-    font-weight: 600;
-    margin-left: 15px;
-    margin-top: 50px;
+  font-size: 25px;
+  font-family: 'Zen Kaku Gothic New', sans-serif;
+  font-weight: 600; 
+  margin-left: 15px;
+  margin-top: 50px;
+}
+
+/* Search Icon */
+.Search-Icon{
+  width: 20px;
+  height: 20px;
+  float: right;
+  margin-top: -53px;
+  margin-right: 15px;
 }
 
 /* Coming Soon Category Text */
 .Coming-Soon{
   font-family: 'Quicksand', sans-serif;
-  font-size: 15px;
+  font-size: 17px;
+  margin-left: 15px;
+  margin-top: -10px;
 }
 
 /* Movie List Display */
@@ -26,8 +37,8 @@
 
 /* Movie Posters */
 .Movie-Poster{
-  height: 220px;
-  width: 400px;
+  height: 180px;
+  width: 350px;
   border-radius: 7px;
   margin-right: 10px;
   margin-left: 15px;
