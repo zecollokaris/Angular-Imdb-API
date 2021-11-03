@@ -21,20 +21,33 @@
 }
 
 /* Coming Soon Category Text */
-.Coming-Soon{
+.Category-Text{
   font-family: 'Quicksand', sans-serif;
-  font-size: 17px;
+  font-size: 18px;
   margin-left: 15px;
   margin-top: -10px;
   font-weight: 600;
+  color: rgb(87, 84, 84);
+}
+
+/* See All Text */
+.SeeAll-Text{
+  font-family: 'Quicksand', sans-serif;
+  font-size: 18px;
+  margin-left: 15px;
+  margin-top: -42px;
+  font-weight: 600;
   color: gray;
+  float: right;
+  margin-right: 15px;
 }
 
 /* Movie List Display */
 .Movie-List {
-  overflow-x: scroll;
-  overflow-y: hidden;
-  white-space: nowrap;
+    display: flex;
+    flex-wrap: nowrap;
+    overflow-x: auto;
+  
   padding-bottom: 20px;
 }
 
@@ -44,9 +57,28 @@
   width: 350px;
   border-radius: 7px;
   margin-right: 10px;
-  margin-left: 15px;
+  margin-left: 10px;
   box-shadow: rgba(0, 0, 0, 0.45) 0px 25px 20px -20px;
 }
+
+/* Rectangle Movie Posters */
+.Rectangle-Movie-Poster{
+  height: 220px;
+  width: 165px;
+  border-radius: 7px;
+  margin-right: 10px;
+  margin-left: 10px;
+  box-shadow: rgba(0, 0, 0, 0.45) 0px 25px 20px -20px;
+}
+
+/* Movie Name Title */
+.Movie-Name{
+    margin-top: 230px;
+    margin-left: -165px;
+    text-transform: uppercase;
+    text-align: center;
+}
+
 
 /* Remove ScrollBar */
 ::-webkit-scrollbar {
