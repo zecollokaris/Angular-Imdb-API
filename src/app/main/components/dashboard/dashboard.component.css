@@ -59,15 +59,19 @@
     background: transparent;
 }
   
-
 /* Movie Posters */
-.Movie-Poster{
-  height: 180px;
-  width: 350px;
+.Movie-Background-Poster{
+  height: 170px;
+  min-width: 350px;
   border-radius: 7px;
   margin-right: 10px;
   margin-left: 10px;
   box-shadow: rgba(0, 0, 0, 0.45) 0px 25px 20px -20px;
+  background-attachment: scroll;
+  background-repeat: no-repeat;
+  background-size: auto;
+  background-size: cover;
+  background-attachment: fixed;
 }
 
 /* Rectangle Movie Posters */
@@ -117,4 +121,3 @@
     font-size: 13px;
     max-width: 155px;
 }
-  
