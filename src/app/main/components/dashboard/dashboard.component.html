@@ -5,326 +5,65 @@
   Top 250 Tvs 
 </button> -->
 
+<div>
+  <!-- MOVIES TITLE -->
+  <p class="Movie-Title">MOVIES</p>
 
-<!-- MOVIES TITLE -->
-<p class="Movie-Title">MOVIES</p>
+  <!-- MOVIES ICON -->
+  <img class="Search-Icon" src="./assets/Icons/search.png" alt="Seach Icon">
 
-<!-- MOVIES ICON -->
-<img class="Search-Icon" src="./assets/Icons/search.png" alt="Seach Icon">
-
-<!-- COMING SOON  -->
-<p class="Category-Text">Coming Soon</p>
-
-  <div class="Movie-List">
-    <div class="Movie-Background-Poster" style="background-image: url(./assets/PosterImages/FreeGuy.jpeg);"></div>
-    <div class="Movie-Background-Poster" style="background-image: url(./assets/PosterImages/After.jpeg);"></div>
-    <div class="Movie-Background-Poster" style="background-image: url(./assets/PosterImages/BlackP.jpeg);"></div>
-    <div class="Movie-Background-Poster" style="background-image: url(./assets/PosterImages/BlackP.jpeg);"></div>
-    <div class="Movie-Background-Poster" style="background-image: url(./assets/PosterImages/FreeGuy.jpeg);"></div>
-    <div class="Movie-Background-Poster" style="background-image: url(./assets/PosterImages/FreeGuy.jpeg);"></div>
-    <div class="Movie-Background-Poster" style="background-image: url(./assets/PosterImages/FreeGuy.jpeg);"></div>
-
-  </div> 
-  
+  <!-- COMING SOON  -->
+  <p class="Category-Text">Coming Soon</p>
   <!-- Coming Soon Movie List -->
-  <!-- <div class="Movie-List" >
-    <div class="Movie-Background-Poster" style="background-image: url(./assets/PosterImages/After.jpeg);"></div>
-    <img class="Movie-Poster" *ngFor="let movie of movies" src="{{movie.image}}" alt="Movies Coming Soon Images">
-  </div> -->
+  <div class="Movie-List" >
+    <div class="Movie-Background-Poster" *ngFor="let movie of movies" style="background-image: url(./assets/PosterImages/After.jpeg);"></div>
+  </div>
+
 
   <!-- TOP 250 MOVIES  -->
   <p class="Category-Text" style="margin-top: -20px;">Top 250 Movies</p>
-
   <p class="SeeAll-Text">See all</p>
-  
-  <div class="Movie-List">
-    <!-- Movie Poster -->
-    <img src="./assets/PosterImages/After.jpeg" class="Rectangle-Movie-Poster" alt="">
-    <!-- Movie Title -->
-    <div>
-      <p class="Movie-Name">Aftersk dslkds lkdsl dksldksldk</p>
-    </div>
-    <img src="./assets/PosterImages/AirLift.jpeg" class="Rectangle-Movie-Poster" alt="">
-    <div>
-      <p class="Movie-Name">Aftersk dslkds lkdsl dksldksldk</p>
-    </div>
-    <img src="./assets/PosterImages/BlackP.jpeg" class="Rectangle-Movie-Poster" alt="">
-    <div>
-      <p class="Movie-Name">Aftersk dslkds lkdsl dksldksldk</p>
-    </div>
-    <img src="./assets/PosterImages/CrazyRich.jpeg" class="Rectangle-Movie-Poster" alt="">
-    <div>
-      <p class="Movie-Name">Aftersk dslkds lkdsl dksldksldk</p>
-    </div>
-    <img src="./assets/PosterImages/Dragon.jpeg" class="Rectangle-Movie-Poster" alt="">
-    <div>
-      <p class="Movie-Name">Aftersk dslkds lkdsl dksldksldk</p>
-    </div>
-    <img src="./assets/PosterImages/FreeGuy.jpeg" class="Rectangle-Movie-Poster" alt="">
-    <div>
-      <p class="Movie-Name">Aftersk dslkds lkdsl dksldksldk</p>
-    </div>
-    <img src="./assets/PosterImages/JungleCruise.jpeg" class="Rectangle-Movie-Poster" alt="">
-    <div>
-      <p class="Movie-Name">Aftersk dslkds lkdsl dksldksldk</p>
-    </div>
-    <img src="./assets/PosterImages/MrClean.jpeg" class="Rectangle-Movie-Poster" alt="">
-    <div>
-      <p class="Movie-Name">Aftersk dslkds lkdsl dksldksldk</p>
-    </div>
-    <img src="./assets/PosterImages/Skyscraper.jpeg" class="Rectangle-Movie-Poster" alt="">
-    <div>
-      <p class="Movie-Name">Aftersk dslkds lkdsl dksldksldk</p>
-    </div>
-    <img src="./assets/PosterImages/SpiderMan.jpeg" class="Rectangle-Movie-Poster" alt="">
-    <div>
-      <p class="Movie-Name">Aftersk dslkds lkdsl dksldksldk</p>
-    </div>
-    <img src="./assets/PosterImages/The Hill.jpeg" class="Rectangle-Movie-Poster" alt="">
-    <div>
-      <p class="Movie-Name">Aftersk dslkds lkdsl dksldksldk</p>
-    </div>
-
-  </div> 
-
   <!-- Top 250 Movie List -->
-  <!-- <div class="Movie-List" >
-    <img class="Rectangle-Movie-Poster" *ngFor="let movie of movies" src="{{movie.image}}" alt="Movies Coming Soon Images">
-
-    <div>
-      <p class="Movie-Name">Aftersk dslkds lkdsl dksldksldk</p>
+  <div class="Movie-List" >
+    <div *ngFor="let movie of movies">
+      <img class="Rectangle-Movie-Poster" src="{{movie.image}}" alt="Movies Poster">
+      <p class="Movie-Name">{{movie.fullTitle}}</p>
     </div>
-  </div> -->
+  </div>
 
 
   <!-- TOP 250 TV SHOWS  -->
   <p class="Category-Text" style="margin-top: -20px;">Top 250 Tv Shows</p>
-
   <p class="SeeAll-Text">See all</p>
-  
-  <div class="Movie-List">
-    <!-- Movie Poster -->
-    <img src="./assets/PosterImages/After.jpeg" class="Rectangle-Movie-Poster" alt="">
-    <!-- Movie Title -->
-    <div>
-      <p class="Category-Movie-Year">2015</p>
-      <p class="Category-Movie-Name">Aftersk dslkds lkdsl dksldksldk</p>
+  <!-- Top 250 Tv Show List -->
+  <div class="Movie-List" >
+    <div *ngFor="let movie of movies">
+      <img class="Rectangle-Movie-Poster" src="{{movie.image}}" alt="Movies Poster">
+      <p class="Category-Movie-Name">{{movie.fullTitle}}</p>
     </div>
-    <img src="./assets/PosterImages/AirLift.jpeg" class="Rectangle-Movie-Poster" alt="">
-    <div>
-      <p class="Category-Movie-Year">2015</p>
-      <p class="Category-Movie-Name">Aftersk dslkds lkdsl dksldksldk</p>
-    </div>
-    <img src="./assets/PosterImages/BlackP.jpeg" class="Rectangle-Movie-Poster" alt="">
-    <div>
-      <p class="Category-Movie-Year">2015</p>
-      <p class="Category-Movie-Name">Aftersk dslkds lkdsl dksldksldk</p>
-    </div>
-    <img src="./assets/PosterImages/CrazyRich.jpeg" class="Rectangle-Movie-Poster" alt="">
-    <div>
-      <p class="Category-Movie-Year">2015</p>
-      <p class="Category-Movie-Name">Aftersk dslkds lkdsl dksldksldk</p>
-    </div>
-    <img src="./assets/PosterImages/Dragon.jpeg" class="Rectangle-Movie-Poster" alt="">
-    <div>
-      <p class="Category-Movie-Year">2015</p>
-      <p class="Category-Movie-Name">Aftersk dslkds lkdsl dksldksldk</p>
-    </div>
-    <img src="./assets/PosterImages/FreeGuy.jpeg" class="Rectangle-Movie-Poster" alt="">
-    <div>
-      <p class="Category-Movie-Year">2015</p>
-      <p class="Category-Movie-Name">Aftersk dslkds lkdsl dksldksldk</p>
-    </div>
-    <img src="./assets/PosterImages/JungleCruise.jpeg" class="Rectangle-Movie-Poster" alt="">
-    <div>
-      <p class="Category-Movie-Year">2015</p>
-      <p class="Category-Movie-Name">Aftersk dslkds lkdsl dksldksldk</p>
-    </div>
-    <img src="./assets/PosterImages/MrClean.jpeg" class="Rectangle-Movie-Poster" alt="">
-    <div>
-      <p class="Category-Movie-Year">2015</p>
-      <p class="Category-Movie-Name">Aftersk dslkds lkdsl dksldksldk</p>
-    </div>
-    <img src="./assets/PosterImages/Skyscraper.jpeg" class="Rectangle-Movie-Poster" alt="">
-    <div>
-      <p class="Category-Movie-Year">2015</p>
-      <p class="Category-Movie-Name">Aftersk dslkds lkdsl dksldksldk</p>
-    </div>
-    <img src="./assets/PosterImages/SpiderMan.jpeg" class="Rectangle-Movie-Poster" alt="">
-    <div>
-      <p class="Category-Movie-Year">2015</p>
-      <p class="Category-Movie-Name">Aftersk dslkds lkdsl dksldksldk</p>
-    </div>
-    <img src="./assets/PosterImages/The Hill.jpeg" class="Rectangle-Movie-Poster" alt="">
-    <div>
-      <p class="Category-Movie-Year">2015</p>
-      <p class="Category-Movie-Name">Aftersk dslkds lkdsl dksldksldk</p>
-    </div>
-
-  </div> 
-
-  <!-- Top 250 Movie List -->
-  <!-- <div class="Movie-List" >
-    <img class="Rectangle-Movie-Poster" *ngFor="let movie of movies" src="{{movie.image}}" alt="Movies Coming Soon Images">
-
-    <div>
-      <p class="Category-Movie-Year">2015</p>
-      <p class="Category-Movie-Name">Aftersk dslkds lkdsl dksldksldk</p>
-    </div>
-  </div> -->
+  </div>
 
 
-
-    <!-- MOST POPULAR TV SHOWS  -->
-    <p class="Category-Text" style="margin-top: -10px;">Most Popular Tv Shows</p>
-
-    <p class="SeeAll-Text">See all</p>
-    
-    <div class="Movie-List">
-      <!-- Movie Poster -->
-      <img src="./assets/PosterImages/After.jpeg" class="Rectangle-Movie-Poster" alt="">
-      <!-- Movie Title -->
-      <div>
-        <p class="Category-Movie-Year">2015</p>
-        <p class="Category-Movie-Name">Aftersk dslkds lkdsl dksldksldk</p>
-      </div>
-      <img src="./assets/PosterImages/AirLift.jpeg" class="Rectangle-Movie-Poster" alt="">
-      <div>
-        <p class="Category-Movie-Year">2015</p>
-        <p class="Category-Movie-Name">Aftersk dslkds lkdsl dksldksldk</p>
-      </div>
-      <img src="./assets/PosterImages/BlackP.jpeg" class="Rectangle-Movie-Poster" alt="">
-      <div>
-        <p class="Category-Movie-Year">2015</p>
-        <p class="Category-Movie-Name">Aftersk dslkds lkdsl dksldksldk</p>
-      </div>
-      <img src="./assets/PosterImages/CrazyRich.jpeg" class="Rectangle-Movie-Poster" alt="">
-      <div>
-        <p class="Category-Movie-Year">2015</p>
-        <p class="Category-Movie-Name">Aftersk dslkds lkdsl dksldksldk</p>
-      </div>
-      <img src="./assets/PosterImages/Dragon.jpeg" class="Rectangle-Movie-Poster" alt="">
-      <div>
-        <p class="Category-Movie-Year">2015</p>
-        <p class="Category-Movie-Name">Aftersk dslkds lkdsl dksldksldk</p>
-      </div>
-      <img src="./assets/PosterImages/FreeGuy.jpeg" class="Rectangle-Movie-Poster" alt="">
-      <div>
-        <p class="Category-Movie-Year">2015</p>
-        <p class="Category-Movie-Name">Aftersk dslkds lkdsl dksldksldk</p>
-      </div>
-      <img src="./assets/PosterImages/JungleCruise.jpeg" class="Rectangle-Movie-Poster" alt="">
-      <div>
-        <p class="Category-Movie-Year">2015</p>
-        <p class="Category-Movie-Name">Aftersk dslkds lkdsl dksldksldk</p>
-      </div>
-      <img src="./assets/PosterImages/MrClean.jpeg" class="Rectangle-Movie-Poster" alt="">
-      <div>
-        <p class="Category-Movie-Year">2015</p>
-        <p class="Category-Movie-Name">Aftersk dslkds lkdsl dksldksldk</p>
-      </div>
-      <img src="./assets/PosterImages/Skyscraper.jpeg" class="Rectangle-Movie-Poster" alt="">
-      <div>
-        <p class="Category-Movie-Year">2015</p>
-        <p class="Category-Movie-Name">Aftersk dslkds lkdsl dksldksldk</p>
-      </div>
-      <img src="./assets/PosterImages/SpiderMan.jpeg" class="Rectangle-Movie-Poster" alt="">
-      <div>
-        <p class="Category-Movie-Year">2015</p>
-        <p class="Category-Movie-Name">Aftersk dslkds lkdsl dksldksldk</p>
-      </div>
-      <img src="./assets/PosterImages/The Hill.jpeg" class="Rectangle-Movie-Poster" alt="">
-      <div>
-        <p class="Category-Movie-Year">2015</p>
-        <p class="Category-Movie-Name">Aftersk dslkds lkdsl dksldksldk</p>
-      </div>
-  
-    </div> 
-  
-    <!-- Top 250 Movie List -->
-    <!-- <div class="Movie-List" >
-      <img class="Rectangle-Movie-Poster" *ngFor="let movie of movies" src="{{movie.image}}" alt="Movies Coming Soon Images">
-  
-      <div>
-        <p class="Category-Movie-Year">2015</p>
-        <p class="Category-Movie-Name">Aftersk dslkds lkdsl dksldksldk</p>
-      </div>
-    </div> -->
+  <!-- MOST POPULAR TV SHOWS  -->
+  <p class="Category-Text" style="margin-top: -10px;">Most Popular Tv Shows</p>
+  <p class="SeeAll-Text">See all</p>
+  <!-- Most Popular Tv Shows List -->
+  <div class="Movie-List" >
+    <div *ngFor="let movie of movies">
+      <img class="Rectangle-Movie-Poster" src="{{movie.image}}" alt="Movies Poster">
+      <p class="Category-Movie-Name">{{movie.fullTitle}}</p>
+    </div>
+  </div>
 
 
-
-    <!-- IN THEATERS  -->
-    <p class="Category-Text" style="margin-top: -10px;">In Theaters</p>
-
-    <p class="SeeAll-Text">See all</p>
-    
-    <div class="Movie-List">
-      <!-- Movie Poster -->
-      <img src="./assets/PosterImages/After.jpeg" class="Rectangle-Movie-Poster" alt="">
-      <!-- Movie Title -->
-      <div>
-        <p class="Category-Movie-Year">2015</p>
-        <p class="Category-Movie-Name">Aftersk dslkds lkdsl dksldksldk</p>
-      </div>
-      <img src="./assets/PosterImages/AirLift.jpeg" class="Rectangle-Movie-Poster" alt="">
-      <div>
-        <p class="Category-Movie-Year">2015</p>
-        <p class="Category-Movie-Name">Aftersk dslkds lkdsl dksldksldk</p>
-      </div>
-      <img src="./assets/PosterImages/BlackP.jpeg" class="Rectangle-Movie-Poster" alt="">
-      <div>
-        <p class="Category-Movie-Year">2015</p>
-        <p class="Category-Movie-Name">Aftersk dslkds lkdsl dksldksldk</p>
-      </div>
-      <img src="./assets/PosterImages/CrazyRich.jpeg" class="Rectangle-Movie-Poster" alt="">
-      <div>
-        <p class="Category-Movie-Year">2015</p>
-        <p class="Category-Movie-Name">Aftersk dslkds lkdsl dksldksldk</p>
-      </div>
-      <img src="./assets/PosterImages/Dragon.jpeg" class="Rectangle-Movie-Poster" alt="">
-      <div>
-        <p class="Category-Movie-Year">2015</p>
-        <p class="Category-Movie-Name">Aftersk dslkds lkdsl dksldksldk</p>
-      </div>
-      <img src="./assets/PosterImages/FreeGuy.jpeg" class="Rectangle-Movie-Poster" alt="">
-      <div>
-        <p class="Category-Movie-Year">2015</p>
-        <p class="Category-Movie-Name">Aftersk dslkds lkdsl dksldksldk</p>
-      </div>
-      <img src="./assets/PosterImages/JungleCruise.jpeg" class="Rectangle-Movie-Poster" alt="">
-      <div>
-        <p class="Category-Movie-Year">2015</p>
-        <p class="Category-Movie-Name">Aftersk dslkds lkdsl dksldksldk</p>
-      </div>
-      <img src="./assets/PosterImages/MrClean.jpeg" class="Rectangle-Movie-Poster" alt="">
-      <div>
-        <p class="Category-Movie-Year">2015</p>
-        <p class="Category-Movie-Name">Aftersk dslkds lkdsl dksldksldk</p>
-      </div>
-      <img src="./assets/PosterImages/Skyscraper.jpeg" class="Rectangle-Movie-Poster" alt="">
-      <div>
-        <p class="Category-Movie-Year">2015</p>
-        <p class="Category-Movie-Name">Aftersk dslkds lkdsl dksldksldk</p>
-      </div>
-      <img src="./assets/PosterImages/SpiderMan.jpeg" class="Rectangle-Movie-Poster" alt="">
-      <div>
-        <p class="Category-Movie-Year">2015</p>
-        <p class="Category-Movie-Name">Aftersk dslkds lkdsl dksldksldk</p>
-      </div>
-      <img src="./assets/PosterImages/The Hill.jpeg" class="Rectangle-Movie-Poster" alt="">
-      <div>
-        <p class="Category-Movie-Year">2015</p>
-        <p class="Category-Movie-Name">Aftersk dslkds lkdsl dksldksldk</p>
-      </div>
-  
-    </div> 
-  
-    <!-- Top 250 Movie List -->
-    <!-- <div class="Movie-List" >
-      <img class="Rectangle-Movie-Poster" *ngFor="let movie of movies" src="{{movie.image}}" alt="Movies Coming Soon Images">
-  
-      <div>
-        <p class="Category-Movie-Year">2015</p>
-        <p class="Category-Movie-Name">Aftersk dslkds lkdsl dksldksldk</p>
-      </div>
-    </div> -->
+  <!-- IN THEATERS  -->
+  <p class="Category-Text" style="margin-top: -10px;">In Theaters</p>
+  <p class="SeeAll-Text">See all</p>
+  <!-- In Theaters Movie List -->
+  <div class="Movie-List" >
+    <div *ngFor="let movie of movies">
+      <img class="Rectangle-Movie-Poster" src="{{movie.image}}" alt="Movies Poster">
+      <p class="Category-Movie-Name">{{movie.fullTitle}}</p>
+    </div>
+  </div>
+</div>

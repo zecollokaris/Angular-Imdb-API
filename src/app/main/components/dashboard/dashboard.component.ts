@@ -14,7 +14,13 @@ export class DashboardComponent implements OnInit {
   constructor(private mainService: MainService) { }
 
   async ngOnInit() {
-    this.movies = await this.mainService.getComingSoon();
+    this.movies = await 
+    this.mainService.getComingSoon();
+    // this.mainService.getTop250Movies();
+    // this.mainService.getTop250Tvs();
+    // this.mainService.getMostPopularMovies()
+    // this.mainService.getMostPopularTvs()
+    // this.mainService.getInTheaters()
   }
 
 }
