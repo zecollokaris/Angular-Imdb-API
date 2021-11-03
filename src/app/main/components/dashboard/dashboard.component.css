@@ -1,16 +1,43 @@
-
-.ComingSoon-Section{
-    width: 100%;
+.Movie-Container{
+  width: 100vw;
 }
 
-.column {
-    display: flex;
-    flex-wrap: nowrap;
-    overflow-x: auto;
-    float: left;
-    white-space: nowrap; 
+/* Title Movies Text */
+.Movie-Title{
+    font-size: 25px;
+    font-family: 'Zen Kaku Gothic New', sans-serif;
+    font-weight: 600;
+    margin-left: 15px;
+    margin-top: 50px;
 }
-.Movie-Image {
-    flex: 0 0 auto;
- }
 
+/* Coming Soon Category Text */
+.Coming-Soon{
+  font-family: 'Quicksand', sans-serif;
+  font-size: 15px;
+}
+
+/* Movie List Display */
+.Movie-List {
+    overflow-x: scroll;
+    overflow-y: hidden;
+    white-space: nowrap;
+}
+
+/* Movie Posters */
+.Movie-Poster{
+  height: 220px;
+  width: 400px;
+  border-radius: 7px;
+  margin-right: 10px;
+  margin-left: 15px;
+}
+
+/* Remove ScrollBar */
+::-webkit-scrollbar {
+  width: 0; /* Remove scrollbar space */
+  background: transparent; /* Make scrollbar invisible */
+}
+::-webkit-scrollbar-thumb {
+  background: transparent;
+}
