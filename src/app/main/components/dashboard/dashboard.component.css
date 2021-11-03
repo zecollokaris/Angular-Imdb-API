@@ -44,12 +44,21 @@
 
 /* Movie List Display */
 .Movie-List {
-    display: flex;
-    flex-wrap: nowrap;
-    overflow-x: auto;
-  
+  display: flex;
+  flex-wrap: nowrap;
+  overflow-x: auto;
   padding-bottom: 20px;
 }
+
+/* Remove ScrollBar */
+::-webkit-scrollbar {
+    width: 0; /* Remove scrollbar space */
+    background: transparent; /* Make scrollbar invisible */
+  }
+  ::-webkit-scrollbar-thumb {
+    background: transparent;
+}
+  
 
 /* Movie Posters */
 .Movie-Poster{
@@ -73,18 +82,39 @@
 
 /* Movie Name Title */
 .Movie-Name{
-    margin-top: 230px;
-    margin-left: -165px;
+  margin-top: 230px;
+  margin-left: -165px;
+  font-family: 'Zen Kaku Gothic New', sans-serif;
+  font-weight: 600;
+  text-transform: uppercase;
+  text-align: center;
+  font-size: 13px;
+  max-width: 165px;
+}
+
+/* Movie Year */
+.Category-Movie-Year{
+    margin-top: 150px;
+    color: white;
+    margin-left: -155px;
+    font-family: 'Zen Kaku Gothic New', sans-serif;
+    font-weight: 500;
     text-transform: uppercase;
-    text-align: center;
+    text-align: left;
+    font-size: 13px;
+    max-width: 155px;
 }
 
-
-/* Remove ScrollBar */
-::-webkit-scrollbar {
-  width: 0; /* Remove scrollbar space */
-  background: transparent; /* Make scrollbar invisible */
+/* Movie Name Title */
+.Category-Movie-Name{
+    margin-top: -11px;
+    color: white;
+    margin-left: -155px;
+    font-family: 'Zen Kaku Gothic New', sans-serif;
+    font-weight: 600;
+    text-transform: uppercase;
+    text-align: left;
+    font-size: 13px;
+    max-width: 155px;
 }
-::-webkit-scrollbar-thumb {
-  background: transparent;
-}
+  
