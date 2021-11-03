@@ -16,45 +16,40 @@ const routes: Route[] = [
   {
     path: 'dashboard',
     component: DashboardComponent,
-    children : [
+  },
+  {
+    path: 'top250',
+    component: Top250MoviesComponent
+  },
 
-      // Top 250 Movies Path
-      {
-        path: 'top250',
-        component: Top250MoviesComponent
-      },
+  // Top 250 Tvs Path
+  {
+    path: 'top250Tvs',
+    component: Top250TvsComponent  
+  },
 
-      // Top 250 Tvs Path
-      {
-        path: 'top250Tvs',
-        component: Top250TvsComponent  
-      },
+  // Most Popular Movies Path
+  {
+    path: 'MostPopMovies',
+    component: MostPopularMoviesComponent  
+  },
 
-      // Most Popular Movies Path
-      {
-        path: 'MostPopMovies',
-        component: MostPopularMoviesComponent  
-      },
+  // Most Popular Tvs Path
+  {
+    path: 'MostPopTvs',
+    component: MostPopularMoviesComponent  
+  },
 
-      // Most Popular Tvs Path
-      {
-        path: 'MostPopTvs',
-        component: MostPopularMoviesComponent  
-      },
+  // In Theaters Path
+  {
+    path: 'InTheaters',
+    component: InTheatersComponent
+  },
 
-      // In Theaters Path
-      {
-        path: 'InTheaters',
-        component: InTheatersComponent
-      },
-
-      // Comming Soon Path
-      {
-        path: 'ComingSoon',
-        component: ComingSoonComponent
-      },
-
-    ]
+  // Comming Soon Path
+  {
+    path: 'ComingSoon',
+    component: ComingSoonComponent
   },
   {
     path: '',

@@ -4,7 +4,8 @@
 
 export const environment = {
   production: false,
-  apiKey: 'k_fdha4r1p',
+  apiKey: 'k_fd',
+  // k_fdha4r1p
   moviesUrl: 'https://imdb-api.com/en/API'
 };
 

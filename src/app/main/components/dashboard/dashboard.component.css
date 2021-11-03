@@ -1,0 +1,16 @@
+
+.ComingSoon-Section{
+    width: 100%;
+}
+
+.column {
+    display: flex;
+    flex-wrap: nowrap;
+    overflow-x: auto;
+    float: left;
+    white-space: nowrap; 
+}
+.Movie-Image {
+    flex: 0 0 auto;
+ }
+
