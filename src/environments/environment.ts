@@ -4,7 +4,7 @@
 
 export const environment = {
   production: false,
-  apiKey: 'k_fdha4r1p',
+  apiKey: 'k_pkbzwz2n',
   // k_fdha4r1p
   // k_pkbzwz2n
   // k_s459lb1t

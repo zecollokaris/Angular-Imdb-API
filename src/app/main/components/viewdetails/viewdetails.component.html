@@ -1,11 +1,13 @@
-<div class="View-Detials-Container">
+<div class="View-Detials-Container" *ngIf="result">
   <div>
     <!-- Poster Image -->
-    <img class="Poster-Image" src="./assets/PosterImages/After.jpeg" alt="Seach Icon">
+    <img class="Poster-Image" src="{{result.image}}" alt="Seach Icon">
   </div>
 
   <!-- Movie Title -->
-  <p class="Movie-Title">Dora and ther Lost City Of Gold</p>
+  <p class="Movie-Title">{{result.title}}</p>
 
-  <p class="Movie-NoRating">4.0</p>
+  <p class="Movie-NoRating">{{result.imDbRating}}</p>
+
+  <p>{{result.plot}}</p>
 </div>
