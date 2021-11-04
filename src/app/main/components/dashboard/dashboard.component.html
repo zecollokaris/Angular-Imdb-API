@@ -15,8 +15,10 @@
   <!-- COMING SOON  -->
   <p class="Category-Text">Coming Soon</p>
   <!-- Coming Soon Movie List -->
-  <div class="Movie-List" >
-    <div class="Movie-Background-Poster" *ngFor="let movie of movies" style="background-image: url(./assets/PosterImages/After.jpeg);"></div>
+  <div class="Movie-List">
+    <div class="Movie-Background-Poster" *ngFor="let movie of comingmovies" [ngStyle]="{
+      'background-image':'url('+movie.image+')'}">
+    </div>
   </div>
 
 
@@ -24,8 +26,8 @@
   <p class="Category-Text" style="margin-top: -20px;">Top 250 Movies</p>
   <p class="SeeAll-Text">See all</p>
   <!-- Top 250 Movie List -->
-  <div class="Movie-List" >
-    <div *ngFor="let movie of movies">
+  <div class="Movie-List">
+    <div *ngFor="let movie of topmovies">
       <img class="Rectangle-Movie-Poster" src="{{movie.image}}" alt="Movies Poster">
       <p class="Movie-Name">{{movie.fullTitle}}</p>
     </div>
@@ -36,8 +38,8 @@
   <p class="Category-Text" style="margin-top: -20px;">Top 250 Tv Shows</p>
   <p class="SeeAll-Text">See all</p>
   <!-- Top 250 Tv Show List -->
-  <div class="Movie-List" >
-    <div *ngFor="let movie of movies">
+  <div class="Movie-List">
+    <div *ngFor="let movie of toptvs">
       <img class="Rectangle-Movie-Poster" src="{{movie.image}}" alt="Movies Poster">
       <p class="Category-Movie-Name">{{movie.fullTitle}}</p>
     </div>
@@ -48,8 +50,8 @@
   <p class="Category-Text" style="margin-top: -10px;">Most Popular Tv Shows</p>
   <p class="SeeAll-Text">See all</p>
   <!-- Most Popular Tv Shows List -->
-  <div class="Movie-List" >
-    <div *ngFor="let movie of movies">
+  <div class="Movie-List">
+    <div *ngFor="let movie of popmovies">
       <img class="Rectangle-Movie-Poster" src="{{movie.image}}" alt="Movies Poster">
       <p class="Category-Movie-Name">{{movie.fullTitle}}</p>
     </div>
@@ -60,8 +62,8 @@
   <p class="Category-Text" style="margin-top: -10px;">In Theaters</p>
   <p class="SeeAll-Text">See all</p>
   <!-- In Theaters Movie List -->
-  <div class="Movie-List" >
-    <div *ngFor="let movie of movies">
+  <div class="Movie-List">
+    <div *ngFor="let movie of intheaters">
       <img class="Rectangle-Movie-Poster" src="{{movie.image}}" alt="Movies Poster">
       <p class="Category-Movie-Name">{{movie.fullTitle}}</p>
     </div>
