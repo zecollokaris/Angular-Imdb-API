@@ -1,23 +1,38 @@
 <div class="View-Detials-Container" *ngIf="result">
-  
-  <p class="Back-Btn"><img class="Back-Icon" src="./assets/Icons/whiteback.png" alt="Seach Icon" [routerLink]="['/Search']" > Back</p>
-  
+  <p class="Back-Btn">
+    <img
+      class="Back-Icon"
+      src="./assets/Icons/whiteback.png"
+      alt="Seach Icon"
+      [routerLink]="['/Search']"
+    />
+    Back
+  </p>
+
   <div class="Image-Section">
     <!-- Poster Image -->
-    <div class="Poster-Image" [ngStyle]="{'background-image':'linear-gradient(180deg, rgba(245, 246, 252, 0.52) 20%, rgb(255,255,255) 50%), url('+result.image+')' }"></div>
+    <div
+      class="Poster-Image"
+      [ngStyle]="{
+        'background-image':
+          'linear-gradient(180deg, rgba(245, 246, 252, 0.52) 20%, rgb(255,255,255) 50%), url(' +
+          result.image +
+          ')'
+      }"
+    ></div>
   </div>
 
   <!-- Movie Title -->
-  <p class="Movie-Title">{{result.title}}</p>
+  <p class="Movie-Title">{{ result.title }}</p>
 
   <!-- Movie Genre -->
-  <p class="Movie-Genres">{{result.genres}}</p>
+  <p class="Movie-Genres">{{ result.genres }}</p>
 
   <!-- Movie Rating -->
-  <p class="Movie-NoRating">{{result.imDbRating}}</p>
+  <p class="Movie-NoRating">{{ result.imDbRating }}</p>
 
   <!-- Movie Description -->
-  <p class="Movie-PLot">{{result.plot}}</p>
+  <p class="Movie-PLot">{{ result.plot }}</p>
 
   <!-- Watch Now Btn -->
   <button class="Watch-Btn">WATCH NOW</button>
@@ -25,4 +40,14 @@
   <!-- CAST TITLE -->
   <p class="Cast-Title">Cast</p>
 
+  <div class="Cast-List">
+    <div *ngFor="let actor of result.actorList">
+      <!-- Movie Poster -->
+      <img src="{{ actor.image }}" class="Cast-Image" alt="" />
+      <!-- Movie Title -->
+      <div>
+        <p class="Cast-Name">{{ actor.name }}</p>
+      </div>
+    </div>
+  </div>
 </div>

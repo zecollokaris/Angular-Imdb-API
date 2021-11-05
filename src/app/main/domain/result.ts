@@ -4,6 +4,7 @@ export interface Result {
   image: string;
   description: string;
   title: string;
+  actorList: Array<Actor>;
 }
 
 export interface ResultItem {
@@ -12,5 +13,9 @@ export interface ResultItem {
   title: string;
   imDbRating: number;
   genres: string;
-  actorList: string;
+}
+
+export interface Actor {
+  image: string;
+  name: string;
 }

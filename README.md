@@ -45,3 +45,12 @@ This Application allows users to
 7. Open your **Code Editor and run the Application**.
 
 8. Run ``ng serve`` for a dev server. Navigate to http://localhost:4200/. The app will automatically reload if you change any of the source files.
+
+
+### Splash Page.
+
+<p align="center">
+<img align="left" width="250" src="Spec.md/Disp2.png" alt="Cryptobyte logo" />
+<img align="centre" width="250" src="Spec.md/Disp3.png" alt="Welcome page" />
+<img align="right" width="250" src="Spec.md/Disp12.png" alt="Second welcome page" />
+<p>
