@@ -103,6 +103,46 @@
 }
 
 
+/* Cast Display List */
+.Cast-List {
+  display: flex;
+  flex-wrap: nowrap;
+  overflow-x: auto;
+  padding-bottom: 20px;
+  padding-bottom: 10px;
+}
+
+/* Cast Display Image */
+.Cast-Image{
+  height: 121px;
+  width: 96px;
+  border-radius: 5px;
+  margin-right: 10px;
+  margin-left: 10px;
+}
+
+/* Movie Cast Name */
+.Cast-Name{
+  font-family: 'Zen Kaku Gothic New', sans-serif;
+  text-transform: capitalize;
+  color: #5C5C5C;
+  text-align: center;
+  font-size: 11px;
+  max-width: 95px;
+  margin-top: 130px;
+  margin-left: -96px;
+}
+
+
+/* Remove ScrollBar */
+::-webkit-scrollbar {
+  width: 0; /* Remove scrollbar space */
+  background: transparent; /* Make scrollbar invisible */
+}
+::-webkit-scrollbar-thumb {
+  background: transparent;
+}
+
 /* MEDIA QUERIES */
 @media only screen and (max-width: 1000px) {
     .View-Detials-Container{

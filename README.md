@@ -1,27 +1,47 @@
-# MoviesApi
+# ANGULAR IMDB API 
 
-This project was generated with [Angular CLI](https://github.com/angular/angular-cli) version 6.2.2.
 
-## Development server
 
-Run `ng serve` for a dev server. Navigate to `http://localhost:4200/`. The app will automatically reload if you change any of the source files.
+## DESCRIPTION
 
-## Code scaffolding
+This is a project generated with Angular CLI using Imdb API to display movies by category and search for movies to fetch stats and details about the specific movie.
 
-Run `ng generate component component-name` to generate a new component. You can also use `ng generate directive|pipe|service|class|guard|interface|enum|module`.
 
-## Build
+## FEATURES
 
-Run `ng build` to build the project. The build artifacts will be stored in the `dist/` directory. Use the `--prod` flag for a production build.
+This Application allows users to
 
-## Running unit tests
+- The User can see a list of 6 movie categories **Top 250 Movies,** **Top 250 Tvs,** **Most Popular movies,** **Most Popular Tvs,** **In Theaters** and ***Coming soon***.
 
-Run `ng test` to execute the unit tests via [Karma](https://karma-runner.github.io).
+- The user can select a **category** and be able to view the **individual movies/shows** in the **category**.
 
-## Running end-to-end tests
+- The User can **search** for any **movie/show title** and for one result drilled down to the **search details**.
 
-Run `ng e2e` to execute the end-to-end tests via [Protractor](http://www.protractortest.org/).
+## TECHNOLOGIES USED:
 
-## Further help
+1. **[Angular Framework](https://angular.io/)**
 
-To get more help on the Angular CLI use `ng help` or go check out the [Angular CLI README](https://github.com/angular/angular-cli/blob/master/README.md).
+2. **[TypeScript](https://www.typescriptlang.org/)**
+
+3. **[Imdb API](https://imdb-api.com/api)**
+
+- **Imdb API** is a platform which provides fast, reliable and unified data APIs to movies.
+
+## **SETUP/INSTALLATION!**
+
+
+1. You will need **Internet connection**.
+
+2. You need to get into the **Angular-Imdb-API**. Link:-> ```hhttps://github.com/zecollokaris/Angular-Imdb-API```
+
+3. From there you can access **Angular-Imdb-API**.
+
+4. **Clone** the project.
+
+5. **get into project folder** (cd into project).
+
+6. If you have all the **Pre-requisites**
+
+7. Open your **Code Editor and run the Application**.
+
+8. Run ``ng serve`` for a dev server. Navigate to http://localhost:4200/. The app will automatically reload if you change any of the source files.
