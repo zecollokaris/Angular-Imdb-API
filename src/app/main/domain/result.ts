@@ -12,4 +12,5 @@ export interface ResultItem {
   title: string;
   imDbRating: number;
   genres: string;
+  actorList: string;
 }
