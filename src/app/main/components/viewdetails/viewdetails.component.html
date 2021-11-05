@@ -1,6 +1,6 @@
 <div class="View-Detials-Container" *ngIf="result">
   
-  <p class="Back-Btn"><img class="Back-Icon" src="./assets/Icons/back.png" alt="Seach Icon" [routerLink]="['/Search']" > Back</p>
+  <p class="Back-Btn"><img class="Back-Icon" src="./assets/Icons/whiteback.png" alt="Seach Icon" [routerLink]="['/Search']" > Back</p>
   
   <div class="Image-Section">
     <!-- Poster Image -->
@@ -10,9 +10,13 @@
   <!-- Movie Title -->
   <p class="Movie-Title">{{result.title}}</p>
 
-  <p class="Movie-Genres">{{result.genreList}}</p>
+  <p class="Movie-Genres">{{result.genres}}</p>
 
   <p class="Movie-NoRating">{{result.imDbRating}}</p>
 
-  <p>{{result.plot}}</p>
+  <p class="Movie-PLot">{{result.plot}}</p>
+
+  <button class="Watch-Btn">WATCH NOW</button>
+
+  <p class="Cast-Title">Cast</p>
 </div>

@@ -59,10 +59,45 @@
   margin-top: -15px;
 }
 
+/* Number Movie Rating */
 .Movie-NoRating{
   text-align: center;
   font-size: 40px;
   margin-top: 20px;
+}
+
+/* Movie Description */
+.Movie-PLot{
+  margin-left: 25px;
+  margin-top: -10px;
+  letter-spacing: 0px;
+  color: #7E7E7E;
+  padding-right: 25px;
+  font-family: 'Quicksand', sans-serif;
+  text-align: left;
+  font-size: 15px;
+}
+
+/* Watch Now Btn */
+.Watch-Btn{
+  margin: auto;
+  font-family: 'Zen Kaku Gothic New', sans-serif;
+  font-size: 14px;
+  background: transparent linear-gradient(180deg, #FFBB3B 0%, #FFA90A 100%) 0% 0% no-repeat padding-box;
+  box-shadow: 0px 5px 5px #ffc04b70;
+  border-radius: 9px;
+  width: 156px;
+  height: 36px;
+  color: white;
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+  margin-top: 31px;
+}
+
+/* Cast Title */
+.Cast-Title{
+  color: #5A5A5A;
 }
 
 /* MEDIA QUERIES */

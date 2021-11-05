@@ -11,5 +11,5 @@ export interface ResultItem {
   image: string;
   title: string;
   imDbRating: number;
-  genreList: string;
+  genres: string;
 }
