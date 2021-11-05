@@ -1,17 +1,36 @@
-# ANGULAR IMDB API 
-
-
+# ANGULAR IMDB API
 
 ## DESCRIPTION
 
 This is a project generated with Angular CLI using Imdb API to display movies by category and search for movies to fetch stats and details about the specific movie.
 
+## DISPLAY
+
+<p align="center">
+<img align="left" width="250" src="Spec.md/Imdb1.png"/>
+<img align="centre" width="250" src="Spec.md/Imdb2.png"/>
+<img align="right" width="250" src="Spec.md/Imdb4.png" />
+<p>
+
+<p align="center">
+<img align="left" width="250" src="Spec.md/Imdb6.png"/>
+<img align="centre" width="250" src="Spec.md/Imdb7.png"/>
+<img align="right" width="250" src="Spec.md/Imdb8.png"/>
+<p>
+
+### TABLET DISPLAY
+
+<p align="center">
+<img align="left" width="250" src="Spec.md/Imdb5.png"/>
+<img align="centre" width="250" src="Spec.md/Imdb9.png"/>
+<img align="right" width="250" src="Spec.md/Imdb10.png"/>
+<p>
 
 ## FEATURES
 
 This Application allows users to
 
-- The User can see a list of 6 movie categories **Top 250 Movies,** **Top 250 Tvs,** **Most Popular movies,** **Most Popular Tvs,** **In Theaters** and ***Coming soon***.
+- The User can see a list of 6 movie categories **Top 250 Movies,** **Top 250 Tvs,** **Most Popular movies,** **Most Popular Tvs,** **In Theaters** and **_Coming soon_**.
 
 - The user can select a **category** and be able to view the **individual movies/shows** in the **category**.
 
@@ -29,10 +48,9 @@ This Application allows users to
 
 ## **SETUP/INSTALLATION!**
 
-
 1. You will need **Internet connection**.
 
-2. You need to get into the **Angular-Imdb-API**. Link:-> ```hhttps://github.com/zecollokaris/Angular-Imdb-API```
+2. You need to get into the **Angular-Imdb-API**. Link:-> `hhttps://github.com/zecollokaris/Angular-Imdb-API`
 
 3. From there you can access **Angular-Imdb-API**.
 
@@ -44,13 +62,4 @@ This Application allows users to
 
 7. Open your **Code Editor and run the Application**.
 
-8. Run ``ng serve`` for a dev server. Navigate to http://localhost:4200/. The app will automatically reload if you change any of the source files.
-
-
-### Splash Page.
-
-<p align="center">
-<img align="left" width="250" src="Spec.md/Disp2.png" alt="Cryptobyte logo" />
-<img align="centre" width="250" src="Spec.md/Disp3.png" alt="Welcome page" />
-<img align="right" width="250" src="Spec.md/Disp12.png" alt="Second welcome page" />
-<p>
+8. Run `ng serve` for a dev server. Navigate to http://localhost:4200/. The app will automatically reload if you change any of the source files.
