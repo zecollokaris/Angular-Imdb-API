@@ -2,27 +2,67 @@
   display: block;
   margin-left: auto;
   margin-right: auto;
-  width: 50vw;
+  width: 40vw;
+}
+
+.View-Detials-Container a{
+  text-decoration: none;
+}
+
+/* Back Button */
+.Back-Btn{
+  margin-top: 50px;
+  margin-left: 20px;
+  font-family: 'Zen Kaku Gothic New', sans-serif;
+  font-size: 22px;
+  width: 80px;
+  border-radius: 7px;
+  cursor: pointer;
+  text-decoration: none;
+  color: white;
+}
+
+/* Back Icon */
+.Back-Icon{
+  height: 18px;
+  width: 15px;
 }
 
 /* Movie Poster Image */
 .Poster-Image{
   width: 100%;
-  height: 500px;
-  margin-top: -9px;
+  height: 700px;
+  background-attachment: fixed;
+  background-repeat: no-repeat;
+  margin-top: -110px;
+  background-attachment: fixed;
+  background-repeat: no-repeat;
+  background-size: auto;
+  background-size: cover;
+  border: 10px solid white;
 }
 
 /* Movie Title */
 .Movie-Title{
+  font-family: 'Zen Kaku Gothic New', sans-serif;
   font-size: 23px;
-  margin-top: -50px;
-  color: white;
-  margin-left: 15px;
+  margin-top: -290px;
+  color: black;
+  margin-left: 25px;
+}
+
+/* Movie Genre */
+.Movie-Genres{
+  font-family: 'Zen Kaku Gothic New', sans-serif;
+  font-size: 13px;
+  margin-left: 25px;
+  margin-top: -15px;
 }
 
 .Movie-NoRating{
   text-align: center;
   font-size: 40px;
+  margin-top: 20px;
 }
 
 /* MEDIA QUERIES */
@@ -30,6 +70,13 @@
     .View-Detials-Container{
         width: 70vw;
     }
+}
+
+/* MEDIA QUERIES */
+@media only screen and (max-width: 850px) {
+  .View-Detials-Container{
+      width: 80vw;
+  }
 }
 
 /* MEDIA QUERIES */
@@ -44,7 +91,7 @@
 @media only screen and (max-width: 600px) {
     .Poster-Image{
         width: 100%;
-        height: 300px;
-        margin-top: -9px;
+        height: 600px;
+        margin-top: -110px;
     }
 }

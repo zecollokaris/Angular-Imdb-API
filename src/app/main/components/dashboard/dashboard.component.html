@@ -16,15 +16,14 @@
   <p class="Category-Text">Coming Soon</p>
   <!-- Coming Soon Movie List -->
   <div class="Movie-List">
-    <div class="Movie-Background-Poster" *ngFor="let movie of comingmovies" [ngStyle]="{
-      'background-image':'url('+movie.image+')'}">
+    <div class="Movie-Background-Poster" *ngFor="let movie of comingmovies" [ngStyle]="{'background-image':'url('+movie.image+')'}">
     </div>
   </div>
 
 
   <!-- TOP 250 MOVIES  -->
   <p class="Category-Text">Top 250 Movies</p>
-  <p class="SeeAll-Text">See all</p>
+  <p class="SeeAll-Text" [routerLink]="['/top250']" >See all</p>
   <!-- Top 250 Movie List -->
   <div class="Movie-List">
     <div *ngFor="let movie of topmovies">
@@ -36,7 +35,7 @@
 
   <!-- TOP 250 TV SHOWS  -->
   <p class="Category-Text" style="margin-top: -50px;">Top 250 Tv Shows</p>
-  <p class="SeeAll-Text">See all</p>
+  <p class="SeeAll-Text" [routerLink]="['/top250']" >See all</p>
   <!-- Top 250 Tv Show List -->
   <div class="Movie-List">
     <div *ngFor="let movie of toptvs">
@@ -48,7 +47,7 @@
 
   <!-- MOST POPULAR TV SHOWS  -->
   <p class="Category-Text" style="margin-top: -10px;">Most Popular Tv Shows</p>
-  <p class="SeeAll-Text">See all</p>
+  <p class="SeeAll-Text" [routerLink]="['/MostPopMovies']" >See all</p>
   <!-- Most Popular Tv Shows List -->
   <div class="Movie-List">
     <div *ngFor="let movie of popmovies">
@@ -60,7 +59,7 @@
 
   <!-- IN THEATERS  -->
   <p class="Category-Text" style="margin-top: -10px;">In Theaters</p>
-  <p class="SeeAll-Text">See all</p>
+  <p class="SeeAll-Text" [routerLink]="['/InTheaters']" >See all</p>
   <!-- In Theaters Movie List -->
   <div class="Movie-List">
     <div *ngFor="let movie of intheaters">

@@ -1,7 +1,19 @@
-<input type="text" [(ngModel)]="searchTerm">
-<button (click)="onSearchChange(searchTerm)">search</button>
-<div *ngFor="let result of results" (click)="selectResult(result.id)">
-  <img class="Rectangle-Movie-Poster" src="{{result.image}}" alt="Movies Poster">
-  <p class="Movie-Name">{{result.title}}</p>
-  <p class="Movie-Name">{{result.description}}</p>
+<!-- SEARCH SECTIOM -->
+<div class="Search-Section">
+
+  <div class="Search-Input">
+    <!-- Search Input -->
+    <input type="text" class="Search-Text-Input" [(ngModel)]="searchTerm">
+    <!-- Search Button -->
+    <button (click)="onSearchChange(searchTerm)" class="Search-Btn"><img class="SearchBtn-Icon" src="./assets/Icons/search.png" alt="Seach Icon"></button>
+  </div>
+
+  <div class="Movie-Result-Section">
+    <!-- Search Result -->
+    <div class="Movie-Search" *ngFor="let result of results" (click)="selectResult(result.id)">
+      <img class="Search-Movie-Poster" src="{{result.image}}" alt="Movies Poster">
+      <p class="Search-Movie-Name">{{result.title}}</p>
+    </div>
+  </div>
+
 </div>
