@@ -14,16 +14,16 @@ This is a project generated with Angular CLI using Imdb API to display movies by
 
 <p align="center">
 <img align="left" width="250" src="Spec.md/Imdb6.png"/>
-<img align="centre" width="250" src="Spec.md/Imdb7.png"/>
 <img align="right" width="250" src="Spec.md/Imdb8.png"/>
+<img align="centre" width="250" src="Spec.md/Imdb7.png"/>
 <p>
 
 ### TABLET DISPLAY
 
 <p align="center">
+<img align="right" width="250" src="Spec.md/Imdb10.png"/>
 <img align="left" width="250" src="Spec.md/Imdb5.png"/>
 <img align="centre" width="250" src="Spec.md/Imdb9.png"/>
-<img align="right" width="250" src="Spec.md/Imdb10.png"/>
 <p>
 
 ## FEATURES
