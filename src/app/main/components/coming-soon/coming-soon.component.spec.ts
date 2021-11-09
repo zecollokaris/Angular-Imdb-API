@@ -34,7 +34,7 @@ describe('ComingSoonComponent', () => {
     fixture.detectChanges();
   });
 
-  it('should return top movies', async () => {  
+  it('should return movies', async () => {  
 
     const service = fixture.debugElement.injector.get(MainService);
 
